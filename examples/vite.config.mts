@@ -4,5 +4,5 @@ import AutoImport from 'unplugin-auto-import/vite'
 import UnoCSS from 'unocss/vite'
 
 export default defineConfig({
-  plugins: [vue(), AutoImport(), UnoCSS()]
+  plugins: [vue(), AutoImport({ imports: ['vue'] }), UnoCSS({})]
 })
